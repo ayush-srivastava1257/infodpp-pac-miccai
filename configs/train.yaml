@@ -1,0 +1,18 @@
+experiment_name: baseline_run
+
+model:
+  name: infodpp_pac
+  hidden_dim: 256
+  patch_size: 32
+  overlap: 4
+
+train:
+  batch_size: 16
+  epochs: 200
+  learning_rate: 1e-4
+  seed: 42
+
+early_stopping:
+  patience: 40
+  metric: val_loss
+  mode: min
